@@ -3,7 +3,7 @@ let gameArea = document.querySelector('.main_game__area')
 let airArea = document.querySelector('.air_area')
 
 
-let speed = 15;
+let speed = 10;
 let snowflakeSpeed = 1;
 let snowflakesLimit = 15;
 
