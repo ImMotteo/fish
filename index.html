@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рыбка Лёша</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="start_screen">
+        <div class="start_interactive__area">
+            <h3>Рыбка - Лёша</h3>
+            <p>Это <s>не</s> очень интересная игра про рыбку по имени Лёша. Вам предстоит управлять рыбкой по имени Лёша
+                и уворачиваться от опаснейших снежинок, а так же, вашим вечным врагом будет всратое управление
+                мухахахаххахах. Рыбки ведь боятся снежинок, правда?</p>
+            <div class="button_area">
+                <button class="button start_button" onclick="startGame()">Начать игру</button>
+                <button class="button start_button">Управление</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="timer"><span class="minutes">00</span>:<span class="seconds">00</span></div>
+    <div class="main_game__area">
+        <div class="gameOver_screen">
+            <p class="gameOver_text">Игра окончена. К сожалению, вы не смогли спасти рыбку Лёшу :(</p>
+            <p class="gameOver_timer__text">Вы стойко сражались</p><span class="timer_count"></span>
+            <div class="button start_button" onclick="startGame()">Перезапустить игру</div>
+        </div>
+        <div class="win_screen">
+            <p class="gameOver_text">Вы победили и спасли рыбку по имени Лёша, а если играл сам Лёша, то с днюшкой тебя
+                :) Расти большой, не будь лапшой и не стоит опасаться снежинок!</p>
+            <div class="button start_button" onclick="startGame()">Перезапустить игру</div>
+        </div>
+        <div class="air_area">
+            <div class="message_area">
+                <p class="message_area_text"></p>
+                <div class="boost_timer"></div>
+            </div>
+
+
+        </div>
+        <div class="water_area">
+            <div class="fish" style="top: 60%; left: 25px; width: 85px;">
+                <div class="fish_body"></div>
+                <div class="fish_head"></div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
