@@ -1,0 +1,150 @@
+body {
+    font-family: Mts sans;
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.timer {
+    top: 10px;
+    color: white;
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+}
+
+.button_area {
+    margin-top: 10px;
+}
+
+.main_game__area {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('main_background.png');
+    background-size: cover;
+}
+
+.water_area {
+    width: 100vw;
+    height: 40vh;
+    background-color: #69f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.air_area {
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+}
+
+.fish {
+    position: absolute;
+    height: 40px;
+    width: 85px;
+    display: flex;
+    align-items: center;
+
+}
+
+.fish_head {
+    width: 65px;
+    height: 40px;
+    background-color: #f00;
+    order: 1;
+}
+
+.fish_body {
+    width: 20px;
+    height: 22px;
+    background-color: #f00;
+    order: 2;
+}
+
+.start_screen {
+    background-image: url('start_background.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.start_interactive__area {
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.247);
+    border-radius: 7px;
+    text-align: center;
+    width: 40%;
+
+}
+
+.button {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgba(102, 153, 255, 0);
+    background-color: #69f;
+    color: white;
+
+}
+
+.button:hover {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.snowflake {
+    position: absolute;
+    z-index: 1000;
+    background-size: cover;
+}
+
+.fish_immortality {
+    animation: 2s 5 linear fish_immortality;
+}
+
+@keyframes fish_immortality {
+    0% {
+        opacity: .8;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+.message_area {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    width: fit-content;
+    height: auto;
+    margin: auto;
+}
+
+.gameOver_screen,
+.win_screen {
+    text-align: center;
+    color: white;
+    display: none;
+    font-size: 24px;
+    z-index: 10000000;
+}
